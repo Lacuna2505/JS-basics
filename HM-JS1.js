@@ -29,13 +29,6 @@ else {
 let price3 = 1900;
 (price3 >= 1000 && price3 <= 1900 ) ? console.log('error') : console.log('ok');
 
-//let price4 = 500;
-//if(!price4 > 999 && !price4 < 1901){
-   // console.log('Ok')
-//}
-//else {
-  // console.log('Error')
-//};
 
 // 4.
 let summer = 1;
