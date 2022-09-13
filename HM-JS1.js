@@ -12,8 +12,8 @@ console.log('Ми йдемо в інше кафе')
 
 // 2.
 
-let price = 1000;
-if(price > 999 && price < 1901){
+let price = 1200;
+if(price > 1000 && price < 1900){
 console.log('Ціна між 1000 та 1900')
 };
 
@@ -30,15 +30,21 @@ let price3 = 1900;
 (price3 >= 1000 && price3 <= 1900 ) ? console.log('error') : console.log('ok');
 
 
+
+
 // 4.
-let summer = 1;
-let autumn = 2;
-let winter = 3;
-let spring = 4;
-if(1){
-    console.log('summer')
-} else  {
-    console.log('other seasons')
+let season = 1;
+let season1 = 2;
+let season2 = 3;
+let season3 = 4;
+if(season){
+    console.log('Літо')
+} if (season1) {
+    console.log('Осінь')
+} if (season2) {
+    console.log('Зима')
+} if (season1) {
+    console.log('Весна')
 };
 
 // 5.
@@ -117,9 +123,14 @@ case '/':
 };
 
 // 8.
-let text = 'regular expression';
-const noVowels = text.replace(/[aeiou]/gi, '');
+//let text = 'regular expression';
+//const noVowels = text.replace(/[aeiou]/gi, '');
+//console.log(noVowels);
+
+let text = 'те саме українською мовою';
+const noVowels = text.replace(/[еауїою]/gi, '');
 console.log(noVowels);
+
 
 // 9.
 
