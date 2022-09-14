@@ -17,6 +17,7 @@ if(price > 1000 && price < 1900){
 console.log('Ціна між 1000 та 1900')
 };
 
+
 // 3.
 let price2 = 500;
 if(price2 > 999 && price2 < 1901){
@@ -48,12 +49,23 @@ if(season){
 };
 
 // 5.
-let numberA = 5;
-let numberB = 7;
-let numberC = 10;
-// что-то тут совсем ничего не приходит в голову
 
-
+let a = 10, b = 8, c = 5;
+if (a > b & b > c) {
+    console.log(b);
+}
+else if (a > c & c > b) {
+    console.log(c);
+}
+    else if (c > a & a > b) {
+    console.log(a);
+}
+else if (b > a & b < c) {
+    console.log(b);
+}
+else {
+    console.log('there is no correct number')
+};
 
 //6.
 
@@ -78,23 +90,27 @@ case 5:
 };
 
 // 7.
-let A = 10;
-let B = 5;
+let d = 10;
+let e = 5;
+let operator2 = "+";
 
-switch(operator){
-case 10:
-    console.log(A + B)
+switch(operator2){
+case "+":
+    console.log(d + e);
     break;
-case 5:
-    console.log(A - B)
+case "-":
+    console.log(d - e);
     break;
-case 50:
-    console.log(A * B)
+case "*":
+    console.log(d * e);
     break;
-case 2:
-    console.log(A / B)
+case "/":
+    console.log(d / e);
     break;
+default:
+    console.log('Error');
 };
+
 
 // 7.
 
@@ -134,8 +150,3 @@ console.log(noVowels);
 
 // 9.
 
-let km = 1
-let metr 
-if (metr = km / 1000) {
-console.log(metr + " Метрів в кілометрі");
-};
