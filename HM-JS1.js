@@ -12,8 +12,8 @@ console.log('Ми йдемо в інше кафе')
 
 // 2.
 
-let price = 1200;
-if(price > 1000 && price < 1900){
+let price = 1900;
+if(price > 999 && price < 1901){
 console.log('Ціна між 1000 та 1900')
 };
 
