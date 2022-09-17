@@ -112,7 +112,7 @@ default:
 };
 
 
-// 7.
+// 8.
 
 let result;
 let operator = ('+');
