@@ -1,5 +1,5 @@
 // 1.
-function food (humburger = 5, fries = 1){
+function food (humburger, fries){
     if(humburger >= 4 && fries === 1){
         return('Ми поїли')
     }
@@ -8,18 +8,18 @@ function food (humburger = 5, fries = 1){
     }
     
  }
- console.log(food());
+ console.log (food(5, 1));
  
 // 2.
-function midPrice (price = 1900) {
+function midPrice (price) {
    if(price > 999 && price < 1901){
 return('Ціна між 1000 та 1900')
 }
 }
-console.log(midPrice());
+console.log(midPrice(1900));
 
 // 3.
-function midPrice2 (price2 = 500){
+function midPrice2 (price2){
 if(price2 > 999 && price2 < 1901){
     return('Error')
 }
@@ -27,11 +27,10 @@ else {
     return('Ok')
 }
 }
-console.log(midPrice2());
+console.log(midPrice2(500));
 
 // 4. 
-function season (season1 = 1, season2 = 2, season3 = 3,season4 = 4){
-
+function season (season1, season2, season3,season4){
 if(season1){
     console.log('Літо')
 } if (season2) {
@@ -46,7 +45,7 @@ console.log(season());
 
 // 5.
 
-function middleNum (a = 10, b = 8, c = 5){
+function middleNum (a, b, c){
     if (a > b & b > c) {
         console.log(b);
     }
@@ -63,10 +62,10 @@ function middleNum (a = 10, b = 8, c = 5){
         console.log('there is no correct number')
     };
 }
-return(middleNum());
+middleNum(10, 8, 5);
 
 // 6.
-function week (weekDay = 5){
+function week (weekDay){
     switch(weekDay){
     case 1:
         console.log('Monday')
@@ -86,11 +85,10 @@ function week (weekDay = 5){
     
     };
 }
-return(week());
+week(5);
 
 // 7.
-function mathemat (d = 10, e = 5, operator2 = "+"){
-    
+function mathemat (d, e, operator2){
     switch(operator2){
     case "+":
         console.log(d + e);
@@ -108,10 +106,18 @@ function mathemat (d = 10, e = 5, operator2 = "+"){
         console.log('Error');
     };
 }
-return(mathemat())
+mathemat(10, 5, '+')
 
 // 8. 
-function text (text1 = 'regular expression'){
+
+
+function text (text1){
+const text1 = 'regular expression';
 const noVowels = text1.replace(/[aeiou]/gi, '');
-console.log(noVowels);}
-return(text());
+console.log(noVowels);
+}
+text(text1);
+
+
+
+
